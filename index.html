@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Minha Lista de Tarefas</h1>
+    <p class="descricao">Organize suas tarefas do dia, uma de cada vez.</p>
+
+    <form id="form-tarefa">
+      <label for="campo-tarefa" class="sr-only">Nova tarefa</label>
+      <input
+        id="campo-tarefa"
+        type="text"
+        placeholder="Digite uma tarefa..."
+        maxlength="100"
+        autocomplete="off"
+        required
+      >
+      <button type="submit">Adicionar</button>
+    </form>
+
+    <p id="contador">Você ainda não tem tarefas.</p>
+    <ul id="lista-tarefas"></ul>
+
+    <button id="limpar-concluidas" class="botao-secundario" type="button">
+      Remover tarefas concluídas
+    </button>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
